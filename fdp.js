@@ -1,3 +1,25 @@
+const menu = [ // {{{
+  ["Exercises",
+    ["Simplifying", 0],
+    ["Ordering", 1],
+    ["Mixed number to fraction", 2],
+    ["Simplifying", 0],
+    ["Ordering", 1],
+    ["Mixed number to fraction", 2],
+    ["Fraction to Mixed Number", 3],
+    ["Fraction to Decimal Number", 4],
+    ["Decimal Number to Fraction", 5],
+    ["Multiplication", 6],
+    ["Division", 7],
+    ["Adding & Subtracting", 8],
+    ["Fraction to Mixed Number", 3],
+    ["Fraction to Decimal Number", 4],
+    ["Decimal Number to Fraction", 5],
+    ["Multiplication", 6],
+    ["Division", 7],
+    ["Adding & Subtracting", 8],
+  ],
+]; // }}}
 const assessments = [ // {{{
     [ // {{{ IN
         ['n + n + 2n'           , 'simplify']                           ,
@@ -29,123 +51,146 @@ const assessments = [ // {{{
     ], // }}}
 ]; // }}}
 const exercises = [ // {{{
-    [ // {{{ substitution 
-        ['3f+2g', 'f=7; g=5'],
-        ['3f+2g', 'f=7; g=5'],
-        ['4d-7', 'd=6'],
-        ['u+at', 'u=3; a=10; t=6'],
-        ['3x-y', 'x=4; y=6'],
-        ['9m+2n', 'm=3; n=-6'],
-        ['5p+2r', 'p=6; r=-4'],
-        ['4f+g', 'f=5; g=-2'],
-        ['4p+5q', 'p=3; q=-2'],
-        ['9m+2n', 'm=-3; n=3'],
-        ['6p-r', 'p=-4; r=5'],
-        ['f-2g', 'f=12; g=-6'],
-        ['5p+6q', 'p=10; q=-2'],
-        ['m(n-2)', 'm=9; n=5'],
-        ['5bc', 'b=-4; c=3'],
-        ['4y^2-12', 'y=5'],
-        ['p-2q', 'p=-4; q=-7'],
-        ['b^2-4ac', 'a=8; b=-5; c=2'],
-        ['\\frac{m}{v}', 'm=32; v=8'],
-        ['2j-jk', 'j=7; k=3'],
-        ['5x^2+3', 'x=-3'],
-        ['\\frac{1}{2}bh', 'b=3; h=8'],
-        ['\\frac{1}{2}(a+b)h', 'a=7; b=6; h=10'],
-        ['u+at', 'u=12; a=-6; t=5'],
-        ['mx+c', 'm=-2; x=12; c-7'],
-        ['ut+ \\frac{1}{2}at^2', 'u=-5; a=4; t=3'],
-        ['ut+ \\frac{1}{2}at^2', 'u=3; a=2; t=4'],
-        ['\\frac{v^2-u^2}{2a}', 'v=7; u=5; a=3'],
-    ], // }}}
 
-    [ // {{{ simplification 
+  [ // {{{ simplification 0
+    ['\\frac{12}{18}', 'simplify'],
+    ['\\frac{20}{30}', 'simplify'],
+    ['\\frac{15}{25}', 'simplify'],
+    ['\\frac{14}{21}', 'simplify'],
+    ['\\frac{16}{24}', 'simplify'],
+    ['\\frac{9}{27}', 'simplify'],
+    ['\\frac{21}{28}', 'simplify'],
+    ['\\frac{18}{42}', 'simplify'],
+    ['\\frac{35}{49}', 'simplify'],
+    ['\\frac{24}{36}', 'simplify'],
+    ['\\frac{18}{30}', 'simplify'],
+    ['\\frac{45}{60}', 'simplify'],
+    ['\\frac{32}{48}', 'simplify'],
+    ['\\frac{27}{36}', 'simplify'],
+    ['\\frac{50}{75}', 'simplify'],
+    ['\\frac{48}{72}', 'simplify'],
+    ['\\frac{54}{81}', 'simplify'],
+    ['\\frac{63}{84}', 'simplify'],
+    ['\\frac{72}{96}', 'simplify'],
+    ['\\frac{84}{126}', 'simplify'],
+    ['\\frac{17}{34}', 'simplify'],
+    ['\\frac{22}{121}', 'simplify'],
+    ['\\frac{39}{52}', 'simplify'],
+    ['\\frac{44}{66}', 'simplify'],
+    ['\\frac{121}{143}', 'simplify'],
+    ['\\frac{28}{40}', 'simplify'],
+    ['\\frac{36}{54}', 'simplify'],
+    ['\\frac{42}{56}', 'simplify'],
+    ['\\frac{30}{45}', 'simplify'],
+    ['\\frac{56}{72}', 'simplify'],
+    ['\\frac{64}{80}', 'simplify'],
+    ['\\frac{70}{98}', 'simplify'],
+    ['\\frac{81}{108}', 'simplify'],
+    ['\\frac{90}{120}', 'simplify'],
+    ['\\frac{96}{144}', 'simplify'],
+    ['\\frac{25}{35}', 'simplify'],
+    ['\\frac{45}{90}', 'simplify'],
+    ['\\frac{66}{88}', 'simplify'],
+    ['\\frac{77}{121}', 'simplify'],
+    ['\\frac{91}{104}', 'simplify'],
+    ['\\frac{108}{144}', 'simplify'],
+    ['\\frac{120}{150}', 'simplify'],
+    ['\\frac{132}{168}', 'simplify'],
+    ['\\frac{144}{180}', 'simplify'],
+    ['\\frac{150}{210}', 'simplify'],
+  ], // }}}
 
-        ['0.5  ,\\, \\frac{1}{3} ,\\, 0.75          ,\\, \\frac{2}{3}  ,\\, \\frac{1}{4}', "order from smallest to largest"]  ,
-        ['0.4  ,\\, \\frac{3}{5} ,\\, 0.25          ,\\, \\frac{1}{2}  ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
-        ['0.6  ,\\, \\frac{1}{8} ,\\, 0.2           ,\\, \\frac{3}{8}  ,\\, 0.9', "order from smallest to largest"]           ,
-        ['0.1  ,\\, \\frac{2}{5} ,\\, \\frac{3}{4}  ,\\, 0.35          ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
-        ['0.05 ,\\, \\frac{1}{6} ,\\, 0.3           ,\\, \\frac{5}{6}  ,\\, \\frac{3}{5}', "order from smallest to largest"]  ,
-        ['0.7  ,\\, \\frac{1}{3} ,\\, \\frac{2}{3}  ,\\, 0.55          ,\\, 0.45', "order from smallest to largest"]          ,
-        ['0.9  ,\\, 0.15         ,\\, \\frac{3}{5}  ,\\, \\frac{4}{5}  ,\\, \\frac{1}{4}', "order from smallest to largest"]  ,
-        ['0.2  ,\\, \\frac{1}{8} ,\\, \\frac{5}{8}  ,\\, 0.85          ,\\, \\frac{3}{8}', "order from smallest to largest"]  ,
-        ['0.05 ,\\, \\frac{3}{5} ,\\, \\frac{5}{6}  ,\\, 0.45          ,\\, \\frac{3}{8}', "order from smallest to largest"]  ,
-        ['0.12 ,\\, \\frac{2}{5} ,\\, \\frac{3}{4}  ,\\, 0.25          ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
-        ['0.15 ,\\, \\frac{1}{4} ,\\, 0.5           ,\\, \\frac{5}{6}  ,\\, \\frac{2}{3}', "order from smallest to largest"]  ,
-        ['0.18 ,\\, \\frac{1}{5} ,\\, 0.6           ,\\, \\frac{7}{10} ,\\, 0.45', "order from smallest to largest"]          ,
-        ['0.55 ,\\, \\frac{1}{2} ,\\, 0.75          ,\\, \\frac{1}{3}  ,\\, \\frac{5}{8}', "order from smallest to largest"]  ,
-        ['0.3  ,\\, \\frac{1}{7} ,\\, 0.65          ,\\, \\frac{6}{7}  ,\\, 0.85', "order from smallest to largest"]          ,
-        ['0.1  ,\\, \\frac{1}{2} ,\\, 0.35          ,\\, \\frac{4}{9}  ,\\, \\frac{3}{7}', "order from smallest to largest"]  ,
-        ['0.8  ,\\, \\frac{2}{5} ,\\, 0.25          ,\\, \\frac{5}{6}  ,\\, \\frac{3}{4}', "order from smallest to largest"]  ,
-        ['0.6  ,\\, \\frac{5}{9} ,\\, 0.35          ,\\, \\frac{2}{3}  ,\\, 0.25', "order from smallest to largest"]          ,
-        ['0.05 ,\\, \\frac{1}{3} ,\\, \\frac{7}{10} ,\\, 0.4           ,\\, 0.95', "order from smallest to largest"]          ,
-        ['0.4  ,\\, \\frac{3}{8} ,\\, 0.55          ,\\, \\frac{5}{9}  ,\\, \\frac{7}{8}', "order from smallest to largest"]  ,
-        ['0.7  ,\\, \\frac{4}{9} ,\\, 0.65          ,\\, \\frac{2}{7}  ,\\, 0.3', "order from smallest to largest"]           ,
-        ['0.85 ,\\, \\frac{2}{3} ,\\, 0.9           ,\\, \\frac{5}{9}  ,\\, \\frac{7}{10}', "order from smallest to largest"] ,
-        ['0.45 ,\\, \\frac{1}{6} ,\\, 0.2           ,\\, \\frac{4}{7}  ,\\, \\frac{5}{8}', "order from smallest to largest"]  ,
-        ['0.38 ,\\, \\frac{1}{5} ,\\, 0.12          ,\\, \\frac{3}{4}  ,\\, \\frac{4}{9}', "order from smallest to largest"]  ,
-        ['0.92 ,\\, \\frac{3}{5} ,\\, 0.5           ,\\, \\frac{7}{8}  ,\\, \\frac{1}{3}', "order from smallest to largest"]  ,
-        ['0.2  ,\\, \\frac{2}{7} ,\\, 0.3           ,\\, \\frac{4}{9}  ,\\, \\frac{5}{6}', "order from smallest to largest"]  ,
+  [ // {{{ ordering 1
 
-   ], // }}}
+  ['\\frac{3}{8}, \\frac{5}{8}', 'order from smallest to largest'],
+  ['\\frac{7}{10}, \\frac{4}{10}', 'order from smallest to largest'],
+  ['\\frac{2}{9}, \\frac{8}{9}', 'order from smallest to largest'],
+  ['\\frac{11}{12}, \\frac{5}{12}', 'order from smallest to largest'],
+  ['\\frac{6}{7}, \\frac{3}{7}', 'order from smallest to largest'],
+  ['\\frac{1}{6}, \\frac{5}{6}', 'order from smallest to largest'],
+  ['\\frac{4}{11}, \\frac{9}{11}', 'order from smallest to largest'],
+  ['\\frac{10}{13}, \\frac{7}{13}', 'order from smallest to largest'],
+  ['\\frac{5}{14}, \\frac{12}{14}', 'order from smallest to largest,'],
+  ['\\frac{3}{16}, \\frac{15}{16}', 'order from smallest to largest'],
+  ['\\frac{2}{5}, \\frac{4}{5}', 'order from smallest to largest'],
+  ['\\frac{7}{9}, \\frac{1}{9}', 'order from smallest to largest,'],
+  ['\\frac{6}{11}, \\frac{8}{11}', 'order from smallest to largest'],
+  ['\\frac{9}{12}, \\frac{3}{12}', 'order from smallest to largest'],
+  ['\\frac{13}{15}, \\frac{11}{15}', 'order from smallest to largest'],
+  ['\\frac{1}{4}, \\frac{3}{8}', 'order from smallest to largest'],
+  ['\\frac{2}{5}, \\frac{6}{10}', 'order from smallest to largest'],
+  ['\\frac{3}{4}, \\frac{9}{12}', 'order from smallest to largest'],
+  ['\\frac{5}{6}, \\frac{10}{12}', 'order from smallest to largest,'],
+  ['\\frac{2}{3}, \\frac{8}{12}', 'order from smallest to largest'],
+  ['\\frac{3}{5}, \\frac{9}{15}', 'order from smallest to largest'],
+  ['\\frac{4}{7}, \\frac{8}{14}', 'order from smallest to largest,'],
+  ['\\frac{5}{8}, \\frac{15}{16}', 'order from smallest to largest'],
+  ['\\frac{7}{9}, \\frac{14}{18}', 'order from smallest to largest'],
+  ['\\frac{3}{10}, \\frac{9}{20}', 'order from smallest to largest'],
+  ['\\frac{4}{9}, \\frac{8}{18}', 'order from smallest to largest'],
+  ['\\frac{5}{12}, \\frac{15}{24}', 'order from smallest to largest'],
+  ['\\frac{6}{11}, \\frac{12}{22}', 'order from smallest to largest'],
+  ['\\frac{7}{8}, \\frac{21}{24}', 'order from smallest to largest'],
+  ['\\frac{9}{10}, \\frac{18}{20}', 'order from smallest to largest'],
+  ['\\frac{2}{3}, \\frac{3}{5}', 'order from smallest to largest'],
+  ['\\frac{4}{7}, \\frac{5}{6}', 'order from smallest to largest'],
+  ['\\frac{3}{8}, \\frac{2}{5}', 'order from smallest to largest'],
+  ['\\frac{5}{9}, \\frac{4}{11}', 'order from smallest to largest'],
+  ['\\frac{7}{10}, \\frac{3}{4}', 'order from smallest to largest'],
+  ['\\frac{5}{12}, \\frac{7}{8}', 'order from smallest to largest'],
+  ['\\frac{2}{7}, \\frac{3}{10}', 'order from smallest to largest'],
+  ['\\frac{4}{9}, \\frac{5}{12}', 'order from smallest to largest'],
+  ['\\frac{3}{11}, \\frac{2}{7}', 'order from smallest to largest'],
+  ['\\frac{5}{6}, \\frac{7}{9}', 'order from smallest to largest'],
+  ['\\frac{7}{12}, \\frac{5}{8}', 'order from smallest to largest'],
+  ['\\frac{9}{10}, \\frac{8}{9}', 'order from smallest to largest,'],
+  ['\\frac{11}{12}, \\frac{13}{15}', 'order from smallest to largest'],
+  ['\\frac{7}{8}, \\frac{9}{10}', 'order from smallest to largest'],
+  ['\\frac{5}{14}, \\frac{3}{8}', 'order from smallest to largest'],
+  ['\\frac{7}{12}, \\frac{5}{8}', 'order from smallest to largest'],
+  ['\\frac{9}{10}, \\frac{8}{9}', 'order from smallest to largest',
+  ['\\frac{11}{12}, \\frac{13}{15}', 'order from smallest to largest'],
+  ['\\frac{7}{8}, \\frac{9}{10}', 'order from smallest to largest'],
+  ['\\frac{5}{14}, \\frac{3}{8}', 'order from smallest to largest'],
+  ['\\frac{6}{11}, \\frac{5}{9}', 'order from smallest to largest'],
+  ['\\frac{7}{15}, \\frac{4}{9}', 'order from smallest to largest'],
+  ['\\frac{8}{13}, \\frac{7}{12}', 'order from smallest to largest'],
+  ['\\frac{9}{16}, \\frac{5}{8}', 'order from smallest to largest'],
+  ['\\frac{11}{18}, \\frac{7}{12}', 'order from smallest to largest'],
 
-	[ // {{{ fraction to mixed
 
-    ['\\frac{11}{2}', 'convert to mixed number'],
-    ['\\frac{19}{3}', 'convert to mixed number'],
-    ['\\frac{22}{4}', 'convert to mixed number'],
-    ['\\frac{29}{5}', 'convert to mixed number'],
-    ['\\frac{34}{6}', 'convert to mixed number'],
-    ['\\frac{41}{7}', 'convert to mixed number'],
-    ['\\frac{46}{8}', 'convert to mixed number'],
-    ['\\frac{53}{9}', 'convert to mixed number'],
-    ['\\frac{17}{2}', 'convert to mixed number'],
-    ['\\frac{28}{3}', 'convert to mixed number'],
-    ['\\frac{31}{4}', 'convert to mixed number'],
-    ['\\frac{38}{5}', 'convert to mixed number'],
-    ['\\frac{43}{6}', 'convert to mixed number'],
-    ['\\frac{50}{7}', 'convert to mixed number'],
-    ['\\frac{55}{8}', 'convert to mixed number'],
-    ['\\frac{62}{9}', 'convert to mixed number'],
-    ['\\frac{23}{2}', 'convert to mixed number'],
-    ['\\frac{33}{3}', 'convert to mixed number'],
-    ['\\frac{45}{4}', 'convert to mixed number'],
-    ['\\frac{47}{5}', 'convert to mixed number'],
-    ['\\frac{52}{6}', 'convert to mixed number'],
-    ['\\frac{59}{7}', 'convert to mixed number'],
-    ['\\frac{64}{8}', 'convert to mixed number'],
-    ['\\frac{71}{9}', 'convert to mixed number'],
-    ['\\frac{13}{2}', 'convert to mixed number'],
-    ['\\frac{26}{3}', 'convert to mixed number'],
-    ['\\frac{35}{4}', 'convert to mixed number'],
-    ['\\frac{42}{5}', 'convert to mixed number'],
-    ['\\frac{49}{6}', 'convert to mixed number'],
-    ['\\frac{56}{7}', 'convert to mixed number'],
-    ['\\frac{63}{8}', 'convert to mixed number'],
-    ['\\frac{70}{9}', 'convert to mixed number'],
-    ['\\frac{15}{2}', 'convert to mixed number'],
-    ['\\frac{27}{3}', 'convert to mixed number'],
-    ['\\frac{33}{4}', 'convert to mixed number'],
-    ['\\frac{39}{5}', 'convert to mixed number'],
-    ['\\frac{44}{6}', 'convert to mixed number'],
-    ['\\frac{51}{7}', 'convert to mixed number'],
-    ['\\frac{58}{8}', 'convert to mixed number'],
-    ['\\frac{65}{9}', 'convert to mixed number'],
-    ['\\frac{17}{2}', 'convert to mixed number'],
-    ['\\frac{25}{3}', 'convert to mixed number'],
-    ['\\frac{37}{4}', 'convert to mixed number'],
-    ['\\frac{41}{5}', 'convert to mixed number'],
-    ['\\frac{48}{6}', 'convert to mixed number'],
-    ['\\frac{57}{7}', 'convert to mixed number'],
-    ['\\frac{66}{8}', 'convert to mixed number'],
-    ['\\frac{73}{9}', 'convert to mixed number'],
-    ['\\frac{19}{2}', 'convert to mixed number'],
-    ['\\frac{31}{3}', 'convert to mixed number']
 
-    ], // }}}
 
-    [ // {{{ mixed to fraction
+
+    ['0.5  ,\\, \\frac{1}{3} ,\\, 0.75          ,\\, \\frac{2}{3}  ,\\, \\frac{1}{4}', "order from smallest to largest"]  ,
+    ['0.4  ,\\, \\frac{3}{5} ,\\, 0.25          ,\\, \\frac{1}{2}  ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
+    ['0.6  ,\\, \\frac{1}{8} ,\\, 0.2           ,\\, \\frac{3}{8}  ,\\, 0.9', "order from smallest to largest"]           ,
+    ['0.1  ,\\, \\frac{2}{5} ,\\, \\frac{3}{4}  ,\\, 0.35          ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
+    ['0.05 ,\\, \\frac{1}{6} ,\\, 0.3           ,\\, \\frac{5}{6}  ,\\, \\frac{3}{5}', "order from smallest to largest"]  ,
+    ['0.7  ,\\, \\frac{1}{3} ,\\, \\frac{2}{3}  ,\\, 0.55          ,\\, 0.45', "order from smallest to largest"]          ,
+    ['0.9  ,\\, 0.15         ,\\, \\frac{3}{5}  ,\\, \\frac{4}{5}  ,\\, \\frac{1}{4}', "order from smallest to largest"]  ,
+    ['0.2  ,\\, \\frac{1}{8} ,\\, \\frac{5}{8}  ,\\, 0.85          ,\\, \\frac{3}{8}', "order from smallest to largest"]  ,
+    ['0.05 ,\\, \\frac{3}{5} ,\\, \\frac{5}{6}  ,\\, 0.45          ,\\, \\frac{3}{8}', "order from smallest to largest"]  ,
+    ['0.12 ,\\, \\frac{2}{5} ,\\, \\frac{3}{4}  ,\\, 0.25          ,\\, \\frac{4}{5}', "order from smallest to largest"]  ,
+    ['0.15 ,\\, \\frac{1}{4} ,\\, 0.5           ,\\, \\frac{5}{6}  ,\\, \\frac{2}{3}', "order from smallest to largest"]  ,
+    ['0.18 ,\\, \\frac{1}{5} ,\\, 0.6           ,\\, \\frac{7}{10} ,\\, 0.45', "order from smallest to largest"]          ,
+    ['0.55 ,\\, \\frac{1}{2} ,\\, 0.75          ,\\, \\frac{1}{3}  ,\\, \\frac{5}{8}', "order from smallest to largest"]  ,
+    ['0.3  ,\\, \\frac{1}{7} ,\\, 0.65          ,\\, \\frac{6}{7}  ,\\, 0.85', "order from smallest to largest"]          ,
+    ['0.1  ,\\, \\frac{1}{2} ,\\, 0.35          ,\\, \\frac{4}{9}  ,\\, \\frac{3}{7}', "order from smallest to largest"]  ,
+    ['0.8  ,\\, \\frac{2}{5} ,\\, 0.25          ,\\, \\frac{5}{6}  ,\\, \\frac{3}{4}', "order from smallest to largest"]  ,
+    ['0.6  ,\\, \\frac{5}{9} ,\\, 0.35          ,\\, \\frac{2}{3}  ,\\, 0.25', "order from smallest to largest"]          ,
+    ['0.05 ,\\, \\frac{1}{3} ,\\, \\frac{7}{10} ,\\, 0.4           ,\\, 0.95', "order from smallest to largest"]          ,
+    ['0.4  ,\\, \\frac{3}{8} ,\\, 0.55          ,\\, \\frac{5}{9}  ,\\, \\frac{7}{8}', "order from smallest to largest"]  ,
+    ['0.7  ,\\, \\frac{4}{9} ,\\, 0.65          ,\\, \\frac{2}{7}  ,\\, 0.3', "order from smallest to largest"]           ,
+    ['0.85 ,\\, \\frac{2}{3} ,\\, 0.9           ,\\, \\frac{5}{9}  ,\\, \\frac{7}{10}', "order from smallest to largest"] ,
+    ['0.45 ,\\, \\frac{1}{6} ,\\, 0.2           ,\\, \\frac{4}{7}  ,\\, \\frac{5}{8}', "order from smallest to largest"]  ,
+    ['0.38 ,\\, \\frac{1}{5} ,\\, 0.12          ,\\, \\frac{3}{4}  ,\\, \\frac{4}{9}', "order from smallest to largest"]  ,
+    ['0.92 ,\\, \\frac{3}{5} ,\\, 0.5           ,\\, \\frac{7}{8}  ,\\, \\frac{1}{3}', "order from smallest to largest"]  ,
+    ['0.2  ,\\, \\frac{2}{7} ,\\, 0.3           ,\\, \\frac{4}{9}  ,\\, \\frac{5}{6}', "order from smallest to largest"]  ,
+
+  ], // }}}
+
+  [ // {{{ mixed to fraction 2
 
     ['3 \\frac{1}{2}', 'convert to improper fraction'],
     ['6 \\frac{1}{3}', 'convert to improper fraction'],
@@ -199,48 +244,174 @@ const exercises = [ // {{{
 
 
 
-    ], // }}}
+  ], // }}}
 
-    [ // {{{ solving
-        ['3(n-5)=24', 'find n'],
-        ['6(c-8)=42', 'find c'],
-        ['2(w-4)=13', 'find w'],
-        ['6(p+3)=42', 'find p'],
-        ['5(f-2)=22', 'find f'],
-        ['3(g+9)=21', 'find g'],
-    ], // }}}
+  [ // {{{ fraction to mixed 3
 
-    [ // {{{ mixture
+    ['\\frac{11}{2}', 'convert to mixed number'],
+    ['\\frac{19}{3}', 'convert to mixed number'],
+    ['\\frac{22}{4}', 'convert to mixed number'],
+    ['\\frac{29}{5}', 'convert to mixed number'],
+    ['\\frac{34}{6}', 'convert to mixed number'],
+    ['\\frac{41}{7}', 'convert to mixed number'],
+    ['\\frac{46}{8}', 'convert to mixed number'],
+    ['\\frac{53}{9}', 'convert to mixed number'],
+    ['\\frac{17}{2}', 'convert to mixed number'],
+    ['\\frac{28}{3}', 'convert to mixed number'],
+    ['\\frac{31}{4}', 'convert to mixed number'],
+    ['\\frac{38}{5}', 'convert to mixed number'],
+    ['\\frac{43}{6}', 'convert to mixed number'],
+    ['\\frac{50}{7}', 'convert to mixed number'],
+    ['\\frac{55}{8}', 'convert to mixed number'],
+    ['\\frac{62}{9}', 'convert to mixed number'],
+    ['\\frac{23}{2}', 'convert to mixed number'],
+    ['\\frac{33}{3}', 'convert to mixed number'],
+    ['\\frac{45}{4}', 'convert to mixed number'],
+    ['\\frac{47}{5}', 'convert to mixed number'],
+    ['\\frac{52}{6}', 'convert to mixed number'],
+    ['\\frac{59}{7}', 'convert to mixed number'],
+    ['\\frac{64}{8}', 'convert to mixed number'],
+    ['\\frac{71}{9}', 'convert to mixed number'],
+    ['\\frac{13}{2}', 'convert to mixed number'],
+    ['\\frac{26}{3}', 'convert to mixed number'],
+    ['\\frac{35}{4}', 'convert to mixed number'],
+    ['\\frac{42}{5}', 'convert to mixed number'],
+    ['\\frac{49}{6}', 'convert to mixed number'],
+    ['\\frac{56}{7}', 'convert to mixed number'],
+    ['\\frac{63}{8}', 'convert to mixed number'],
+    ['\\frac{70}{9}', 'convert to mixed number'],
+    ['\\frac{15}{2}', 'convert to mixed number'],
+    ['\\frac{27}{3}', 'convert to mixed number'],
+    ['\\frac{33}{4}', 'convert to mixed number'],
+    ['\\frac{39}{5}', 'convert to mixed number'],
+    ['\\frac{44}{6}', 'convert to mixed number'],
+    ['\\frac{51}{7}', 'convert to mixed number'],
+    ['\\frac{58}{8}', 'convert to mixed number'],
+    ['\\frac{65}{9}', 'convert to mixed number'],
+    ['\\frac{17}{2}', 'convert to mixed number'],
+    ['\\frac{25}{3}', 'convert to mixed number'],
+    ['\\frac{37}{4}', 'convert to mixed number'],
+    ['\\frac{41}{5}', 'convert to mixed number'],
+    ['\\frac{48}{6}', 'convert to mixed number'],
+    ['\\frac{57}{7}', 'convert to mixed number'],
+    ['\\frac{66}{8}', 'convert to mixed number'],
+    ['\\frac{73}{9}', 'convert to mixed number'],
+    ['\\frac{19}{2}', 'convert to mixed number'],
+    ['\\frac{31}{3}', 'convert to mixed number']
 
-    ], // }}}
+  ], // }}}
+
+  [ // {{{ f -> d 4
+    ['\\frac {1 } {2 }', 'convert to decimal number'],
+  ], // }}}
+
+  [ // {{{ d -> f 5
+    ['0.12', 'convert to fraction'],
+  ], // }}}
+
+  [ // {{{ Multiplication 6
+    ['\\frac {5 } {7 } * \\frac{4}{11}', 'simplify'],
+  ], // }}}
+
+  [ // {{{ division 7
+    ['\\frac {5 } {7 } \\div \\frac{4}{11}', 'simplify'],
+  ], // }}}
+
+  [ // {{{ adding and subtracting 6
+    ['\\frac {5 } {7 } + \\frac{4}{11}', 'simplify'],
+  ], // }}}
+  
 ] // }}}
 
-notesIntroduction = [
-    `one`,
-    `one`,
-];
-
 init();
-exercises[5] = buildMixedExercises();
+// exercises[5] = buildMixedExercises();
 const urlParameters = parseQueryString();
 const urlParaAssessments = urlParameters.get("assessments");
 const urlParaExercises = urlParameters.get("exercises");
 const urlParaDays = urlParameters.get("days");
 
-
-
 if (urlParaAssessments){ buildAssesments(urlParaAssessments); } 
 else if (urlParaExercises) { buildExercises(urlParaExercises); } 
-else { 
-    buildDefault(); 
-    buildAssesments("in");
+else { buildDefault(); buildAssesments("in");
 } 
 
-
-
-
-
 // FUNCTIONS {{{
+function buildExercises(para) { // {{{
+    let tmpl = (c, i) => {
+        const t = `
+        <h1 class="menu-title">${i+1}</h1> 
+        \\[\\begin{aligned} ${c} \\end{aligned} \\]
+        <countdown time="15" autostart="yes" />`;
+        return t
+    }
+    const slides = document.querySelector(".slides");
+    // let currentLesson = ["0", "1", "2", "3", "4", "5"].indexOf(para);
+    let currentLesson = para;
+    let currentExercises = assembleProblems( // {{{
+        exercises, 
+        currentLesson, 
+        {
+            revision: false,
+            format: false,
+            shuffle: false,
+        }); // }}}
+
+
+    createSection( // {{{
+        currentExercises,
+        {
+            gradientCentre: "#181848",
+            gradientEdge: "#000001",
+            id: "q",
+            numbered: false,
+            template: tmpl,
+        }); // }}}
+    createSection( // {{{
+        [["Thank You", ""]],
+        {
+            gradientCentre: "#181848",
+            gradientEdge: "#000001",
+            id: "q",
+            numbered: false,
+            template: (c, i) => { return `<h1>${c}</h1>`}
+        }); // }}}
+} // }}}
+function buildAssesments(para) { // {{{
+    let tmpl = (c, i) => {
+        const t = `
+        <h1 class="menu-title">${i+1}</h1> 
+        \\[\\begin{aligned} ${c} \\end{aligned} \\]
+        <countdown time="60" autostart="yes" />`;
+        return t
+    }
+    let set = assembleProblems(
+        assessments,
+        para === "in" ? 0 : 1, // choose between INDATA and OUTDATA sets
+        {
+            shuffle: false,
+            revision: false,
+        });
+
+    createSection(
+        set,
+        {
+            gradientCentre: "#181848",
+            gradientEdge: "#000001",
+            id: "q",
+            numbered: true,
+            template: tmpl
+        });
+
+    createSection(
+        [["Thank You", '']],
+        {
+            gradientCentre: "#181848",
+            gradientEdge: "#000001",
+            id: "q",
+            numbered: false,
+            template: (c, i) => { return `<h1>${c}</h1>`}
+        });
+} // }}}
 function buildMixedExercises() { // {{{
     let options = [
         [...Array(exercises[0].length).keys()],
@@ -261,7 +432,6 @@ function buildMixedExercises() { // {{{
             problem = Math.floor(Math.random()*options[type].length);
             problem = options[type].splice(problem, 1);
             if (type === 0) {
-                console.log("hello");
                 note = exercises[type][problem][1];
             }
             // [exercises[type][problem][0]
@@ -269,7 +439,6 @@ function buildMixedExercises() { // {{{
         }
     }
 
-    console.log(choice)
     return choice;
 
 
@@ -347,88 +516,7 @@ function buildDefault() { // {{{
             id: "q",
             numbered: false,
             template: (c, i) => { return `${c}`},
-            notes: notesIntroduction,
         }); // }}}
-} // }}}
-function buildExercises(para) { // {{{
-    let tmpl = (c, i) => {
-        const t = `
-        <h1 class="menu-title">${i+1}</h1> 
-        \\[\\begin{aligned} ${c} \\end{aligned} \\]
-        <countdown time="15" autostart="yes" />`;
-        return t
-    }
-    const slides = document.querySelector(".slides");
-    let currentLesson = ["0", "1", "2", "3", "4", "5"].indexOf(para);
-    let currentExercises = assembleProblems( // {{{
-        exercises, 
-        currentLesson, 
-        {
-            revision: false,
-            format: false,
-            shuffle: false,
-        }); // }}}
-
-
-    createSection( // {{{
-        currentExercises,
-        {
-            gradientCentre: "#181848",
-            gradientEdge: "#000001",
-            id: "q",
-            numbered: false,
-            template: tmpl,
-        }); // }}}
-    createSection( // {{{
-        [["Thank You", ""]],
-        {
-            gradientCentre: "#181848",
-            gradientEdge: "#000001",
-            id: "q",
-            numbered: false,
-            template: (c, i) => { return `<h1>${c}</h1>`}
-        }); // }}}
-} // }}}
-function buildAssesments(para) { // {{{
-    let tmpl = (c, i) => {
-        const t = `
-        <h1 class="menu-title">${i+1}</h1> 
-        \\[\\begin{aligned} ${c} \\end{aligned} \\]
-        <countdown time="60" autostart="yes" />`;
-        return t
-    }
-    let set = assembleProblems(
-        assessments,
-        para === "in" ? 0 : 1, // choose between INDATA and OUTDATA sets
-        {
-            shuffle: false,
-            revision: false,
-        });
-
-    createSection(
-        set,
-        {
-            gradientCentre: "#181848",
-            gradientEdge: "#000001",
-            id: "q",
-            numbered: true,
-            template: tmpl
-        });
-
-    createSection(
-        [["Thank You", '']],
-        {
-            gradientCentre: "#181848",
-            gradientEdge: "#000001",
-            id: "q",
-            numbered: false,
-            template: (c, i) => { return `<h1>${c}</h1>`}
-        });
-} // }}}
-function parseQueryString(s) { // {{{
-    const queryString = window.location.search;
-    const urlParameters = new URLSearchParams(queryString);
-    return urlParameters
 } // }}}
 function assembleProblems(set, level, args) { // {{{
     let output = set[level]
@@ -681,26 +769,30 @@ function generateTimesTriangle(level){ // {{{
     output.push("</table>");
     return output.join(" ");
 } // }}}
+
+function parseQueryString(s) { // {{{
+    const queryString = window.location.search;
+    const urlParameters = new URLSearchParams(queryString);
+    return urlParameters
+} // }}}
 function init(){ // {{{
-    let links = `
-        <h3>Introduction</h3>
-        <ul class="slide-menu-items">
-          <li class="slide-menu-item" data-item="1"><a href="?introduction=true">Introduction</a></li>
-          <li class="slide-menu-item" data-item="2"><a href="?assessments=in">IN Data</a></li>
-          <li class="slide-menu-item" data-item="3"><a href="?assessments=out">OUT Data</a></li>
-        </ul>
+  let links = `
+      <h3>Introduction</h3>
+      <ul class="slide-menu-items">
+        <li class="slide-menu-item" data-item="1"><a href="?introduction=true">Introduction</a></li>
+        <li class="slide-menu-item" data-item="2"><a href="?assessments=in">IN Data</a></li>
+        <li class="slide-menu-item" data-item="3"><a href="?assessments=out">OUT Data</a></li>
+      </ul>
+  `;
 
-
-        <h3>Exercises</h3>
-        <ul class="slide-menu-items">
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=0">Substitution</a></li>
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=1">Simplifying</a></li>
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=2">Expanding</a></li>
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=3">Factorising</a></li>
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=4">Solving</a></li>
-          <li class="slide-menu-item" data-item="1"><a href="?exercises=5">Mixture</a></li>
-        </ul>
-    `;
+  links += menu.map(([sectionTitle, ...items]) => `
+    <h3>${sectionTitle}</h3>
+    <ul class="slide-menu-items">
+      ${items.map(([label, id], i) => `
+      <li class="slide-menu-item" data-item=""><a href="?exercises=${id}">${label}</a></li>
+      `).join("")}
+    </ul>
+`).join("");
 
     Reveal.initialize({ // {{{
         dependencies: [ // {{{
