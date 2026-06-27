@@ -148,7 +148,7 @@ const exercises = [ // {{{
   ['\\frac{7}{8}, \\frac{9}{10}', 'order from smallest to largest'],
   ['\\frac{5}{14}, \\frac{3}{8}', 'order from smallest to largest'],
   ['\\frac{7}{12}, \\frac{5}{8}', 'order from smallest to largest'],
-  ['\\frac{9}{10}, \\frac{8}{9}', 'order from smallest to largest',
+  ['\\frac{9}{10}, \\frac{8}{9}', 'order from smallest to largest'],
   ['\\frac{11}{12}, \\frac{13}{15}', 'order from smallest to largest'],
   ['\\frac{7}{8}, \\frac{9}{10}', 'order from smallest to largest'],
   ['\\frac{5}{14}, \\frac{3}{8}', 'order from smallest to largest'],
